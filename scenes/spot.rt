@@ -1,0 +1,154 @@
+camera
+{
+	origin(0.000 0.000 50.000)
+	direction(0.000 0.000 -1.000)
+	amb_light(0.100 0.100 0.100)
+}
+content
+{
+	object(light)
+	{
+		color(1.000 0.000 0.000)
+		origin(0.000 -2.000 -90.000)
+		intensity(500.000)
+	}
+	object(light)
+	{
+		color(0.000 1.000 0.000)
+		origin(-5.000 8.000 -90.000)
+		intensity(500.000)
+	}
+	object(light)
+	{
+		color(0.000 0.000 1.000)
+		origin(5.000 8.000 -90.000)
+		intensity(500.000)
+	}
+	object(sphere)
+	{
+		name(Center)
+		origin(0.000 0.000 -100.000)
+		x(1.000 0.000 0.000)
+		y(0.000 1.000 0.000)
+		z(0.000 0.000 1.000)
+		radius(0.000)
+		mat(white plastic)
+	}
+	object(plane)
+	{
+		name(Plane 0)
+		origin(0.000 0.000 -100.000)
+		normal(0.000 0.000 1.000)
+		x(1.000 0.000 -0.000)
+		y(-0.000 -1.000 0.000)
+		limit(0.000 0.000)
+		type(0)
+		mat(white plastic)
+	}
+	object(sphere)
+	{
+		name(Sphere 0)
+		origin(-30.000 -30.000 -90.000)
+		x(1.000 0.000 0.000)
+		y(0.000 1.000 0.000)
+		z(0.000 0.000 1.000)
+		radius(8.000)
+		color_diffuse(1.000 0.050 0.050)
+		color_specular(0.900 0.800 0.700)
+		color_tex(0.000 0.000 0.000)
+		spec_idx(0.100)
+		spec_power(50.000)
+		refraction_color(0.000 0.000 0.000)
+		reflection_color(0.750 0.750 0.750)
+		refraction_idx(0.000)
+		uv_scale(1.000 1.000)
+		uv_offset(0.000 0.000)
+	}
+	object(sphere)
+	{
+		name(Sphere 1)
+		origin(-30.000 30.000 -90.000)
+		x(1.000 0.000 0.000)
+		y(0.000 1.000 0.000)
+		z(0.000 0.000 1.000)
+		radius(8.000)
+		color_diffuse(0.050 1.000 0.050)
+		color_specular(0.900 0.800 0.700)
+		color_tex(0.000 0.000 0.000)
+		spec_idx(0.100)
+		spec_power(50.000)
+		refraction_color(0.000 0.000 0.000)
+		reflection_color(0.750 0.750 0.750)
+		refraction_idx(0.000)
+		uv_scale(1.000 1.000)
+		uv_offset(0.000 0.000)
+	}
+	object(sphere)
+	{
+		name(Sphere 2)
+		origin(30.000 -30.000 -90.000)
+		x(1.000 0.000 0.000)
+		y(0.000 1.000 0.000)
+		z(0.000 0.000 1.000)
+		radius(8.000)
+		color_diffuse(0.050 0.050 1.000)
+		color_specular(0.900 0.800 0.700)
+		color_tex(0.000 0.000 0.000)
+		spec_idx(0.100)
+		spec_power(50.000)
+		refraction_color(0.000 0.000 0.000)
+		reflection_color(0.750 0.750 0.750)
+		refraction_idx(0.000)
+		uv_scale(1.000 1.000)
+		uv_offset(0.000 0.000)
+	}
+	object(sphere)
+	{
+		name(Sphere 3)
+		origin(30.000 30.000 -90.000)
+		x(1.000 0.000 0.000)
+		y(0.000 1.000 0.000)
+		z(0.000 0.000 1.000)
+		radius(8.000)
+		color_diffuse(1.000 0.050 1.000)
+		color_specular(0.900 0.800 0.700)
+		color_tex(0.000 0.000 0.000)
+		spec_idx(0.100)
+		spec_power(50.000)
+		refraction_color(0.000 0.000 0.000)
+		reflection_color(0.750 0.750 0.750)
+		refraction_idx(0.000)
+		uv_scale(1.000 1.000)
+		uv_offset(0.000 0.000)
+	}
+}
+animation
+{
+	object(Light 0)
+	{
+		motion(orbit_obj)
+		{
+			center_obj(Center)
+			axis(0.000000 0.000000 1.000000)
+			deg(1.000000)
+		}
+	}
+	object(Light 1)
+	{
+		motion(orbit_obj)
+		{
+			center_obj(Center)
+			axis(0.000000 0.000000 1.000000)
+			deg(1.000000)
+		}
+	}
+	object(Light 2)
+	{
+		motion(orbit_obj)
+		{
+			center_obj(Center)
+			axis(0.000000 0.000000 1.000000)
+			deg(1.000000)
+		}
+	}
+}
